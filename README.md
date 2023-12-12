@@ -60,10 +60,14 @@ With this topic, I will build model based on **VGG16** architecture, like this:
 
 However, I have changed some parameters, especially the top layer ( Fully connected, Dropout, ....) to match my dataset.
 
-This is my model parameters ( use summary from torchsummary):
-
-
+We will see the model configuration in [**src/model.py**]("https://github.com/mThanh1311/animal_classification/blob/main/src/model.py")
 ## Training
+
+I will run this script on the ```terminal``` :
+
+```
+python train.py -b 32 -e 50 -o Adam -l 0.001
+ ```
 ## Checkpoints
 
 I save the checkpoint to the[**checkpoint/best.pt folder**]("https://github.com/mThanh1311/animal_classification/blob/main/checkpoint/best.pt") folder after the training process
@@ -80,9 +84,7 @@ I save the checkpoint to the[**checkpoint/best.pt folder**]("https://github.com/
 
 ## Test
 
-![test]("https://github.com/mThanh1311/animal_classification/blob/main/Experiments/test_img1.png")
-
-![result_bar](""https://github.com/mThanh1311/animal_classification/blob/main/Experiments/animal_prediction.png")
+![test_image]("https://github.com/mThanh1311/animal_classification/blob/main/Experiments/test_images.png")
 
 ## Requirements
 * python 3.10
