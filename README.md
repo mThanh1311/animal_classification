@@ -84,8 +84,16 @@ I save the checkpoint to the [**checkpoint/best.pt folder**](https://github.com/
 ![Confusion_matrix](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/confusion_matrix.png)
 
 ## Test
+After training process, We were have a checkpoint save model parameters, I will test with some images I downloaded in Google and use ```matplotlib``` to show results:
 
 ![test_image](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/test_images.png)
+
+## Test with videos
+Besides testing with images, I also tried to test with animal videos I downloaded on YouTube
+
+This is my results:
+
+![demo_video](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/demo_video.gif)
 
 ## Requirements
 * python 3.10
