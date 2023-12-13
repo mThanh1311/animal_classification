@@ -56,11 +56,12 @@ The input (images) for training be changed to *Tensor Pytorch* [Batch, Channel, 
 ## Model
 
 With this topic, I will build model based on **VGG16** architecture, like this:
-![VGG16_Architecture]("")
+
+![VGG16_Architecture](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/vgg16_architecture.png)
 
 However, I have changed some parameters, especially the top layer ( Fully connected, Dropout, ....) to match my dataset.
 
-We will see the model configuration in [**src/model.py**]("https://github.com/mThanh1311/animal_classification/blob/main/src/model.py")
+We will see the model configuration in [**src/model.py**](https://github.com/mThanh1311/animal_classification/blob/main/src/model.py)
 ## Training
 
 I will run this script on the ```terminal``` :
@@ -70,21 +71,21 @@ python train.py -b 32 -e 50 -o Adam -l 0.001
  ```
 ## Checkpoints
 
-I save the checkpoint to the[**checkpoint/best.pt folder**]("https://github.com/mThanh1311/animal_classification/blob/main/checkpoint/best.pt") folder after the training process
+I save the checkpoint to the [**checkpoint/best.pt folder**](https://github.com/mThanh1311/animal_classification/blob/main/checkpoint/best.pt) folder after the training process
 
 ## Experiments
 
-![train_loss]("https://github.com/mThanh1311/animal_classification/blob/main/Experiments/train_loss.png")
+![train_loss](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/train_loss.png)
 
-![val_acc_loss]("https://github.com/mThanh1311/animal_classification/blob/main/Experiments/val_acc_loss.png")
+![val_acc_loss](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/val_acc_loss.png)
 
 ## Confusion matrix
 
-![Confusion_matrix]("https://github.com/mThanh1311/animal_classification/blob/main/Experiments/confusion_matrix.png")
+![Confusion_matrix](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/confusion_matrix.png)
 
 ## Test
 
-![test_image]("https://github.com/mThanh1311/animal_classification/blob/main/Experiments/test_images.png")
+![test_image](https://github.com/mThanh1311/animal_classification/blob/master/Experiments/test_images.png)
 
 ## Requirements
 * python 3.10
